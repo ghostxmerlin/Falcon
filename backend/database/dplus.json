@@ -1,0 +1,27 @@
+[
+  {
+    "dpid": 1,
+    "dplink": "LPA:1$rsp1.cmlink.com$F6F204FEF6BB46DFB54DC05781DA7CC0",
+    "issold": true
+  },
+  {
+    "dpid": 2,
+    "dplink": "LPA:1$rsp1.cmlink.com$41B3C5F1BF3C46CDA59D845502A4E3FF",
+    "issold": false
+  },
+  {
+    "dpid": 3,
+    "dplink": "LPA:1$rsp1.cmlink.com$1BAD71F55D924A5FA7B9EC7C24EE4571",
+    "issold": false
+  },
+  {
+    "dpid": 4,
+    "dplink": "LPA:1$rsp1.cmlink.com$77C7F018E076420D9C6FD296B5F40E77",
+    "issold": false
+  },
+  {
+    "dpid": 5,
+    "dplink": "LPA:1$rsp1.cmlink.com$5C8BB3B3F1B4438681006CC5A81085FB",
+    "issold": false
+  }
+]
