@@ -1,0 +1,47 @@
+/* Payment.css */
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width:100vw;
+  background-color: #000000;
+}
+
+.payment-fake {
+  position: relative;
+  transform: translateY(100%);
+  object-fit: contain;
+}
+
+.paymentfake-image {
+  width: 75vw;
+  cursor: pointer;
+}
+
+.payed-image {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 50%;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes float {
+  0% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(-10px); }
+  100% { transform: translate(-50%, -50%) translateY(0); }
+}

@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.store-container {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.store-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header部分: Logo、DeSIM.io和Hello, Name */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* 左右分布 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 10px;
+    height: 60px; /* 保持固定高度 */
+}
+
+/* Left section for logo and DeSIM.io */
+.left-section {
+    display: flex;
+    align-items: center; /* 确保垂直居中对齐 */
+    width: 50%; /* 占据50%宽度 */
+}
+
+/* LOGO的样式 */
+.logo {
+    width: 32px;
+    height: 32px;
+    margin:5%;
+    margin-right: 3%; /* 与DeSIM.io文字之间留出间距 */
+}
+
+/* DeSIM.io的文本样式 */
+.header-text {
+    color: white;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: 16px;
+}
+
+/* Right section for Hello, Name */
+.right-section {
+    display: flex;
+    align-items: center; /* 确保垂直居中对齐 */
+    justify-content: flex-end; /* 向右对齐 */
+    width: 50%; /* 右侧宽度占50% */
+}
+
+.hello-text {
+    color: white;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: 16px;
+    margin-right: 8%;
+}
+
+/* head-rec 矩形背景 */
+.head-rec {
+    width: 98%;
+    height: 18%; /* 高度为15% */
+    background-color: rgba(204, 204, 204, 0.1); /* 灰色背景，透明度为85% */
+    border-radius: 15px; /* 圆角 */
+    margin: 10px auto; /* 水平居中 */
+    position: relative;
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: space-between; /* 左右分布对齐 */
+    padding: 0 20px; /* 添加左右内边距 */
+    z-index: 0; /* 确保矩形显示在背后 */
+}
+
+/* Data Plans部分标题 */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 居中对齐 */
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+
+.global-icon {
+    margin-right: 10px;
+}
+
+.data-plans-text {
+    margin-left: 5px;
+}
+
+/* 表格部分 */
+.esim-table-container {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.esim-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(56, 78, 152, 0.9);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: baseline;
+}
+
+.esim-table td {
+    color: white;
+    padding: 8px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    align-items: baseline;
+}
+
+.image-cell {
+    position: relative;
+    text-align: right;
+    align-items: baseline;
+}
+
+.esim-image {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    align-items: baseline;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.right-align {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.esim-table tr:first-child td {
+    border-top: none;
+}
+
+.esim-table tr:last-child td {
+    border-bottom: none;
+}
+
+.esim-table td:not(:first-child) {
+    border-left: none;
+}
+
+.buy-button {
+    background-color: #e4a945;
+    border: 0px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 80px;
+    float: right;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.link-button {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* 底部Tab容器 */
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #313030;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.tab-container button {
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tab-container button:hover {
+    background-color: #e0e0e0;
+}
+
+.tab-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.ad-content {
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 70%; /* 广告内容宽度 */
+}
+
+/* 广告标题 */
+.ad-title {
+    font-family: 'Consolas', monospace; /* 和表格内的文字一致 */
+    color: white;
+    font-size: 16px;
+    font-weight: bold; /* 加粗标题 */
+    margin-bottom: 5px;
+}
+
+.sad-text {
+    font-family: 'Consolas', monospace; /* 和表格内的文字一致 */
+    color: white;
+    font-size: 14px;
+}
+
+/* 广告图标 */
+.ad-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px; /* 图标和广告文字之间的间距 */
+}
+
+.ad-image {
+    width: 72px;
+    height: 72px;
+    margin-left: auto; /* 图片在右侧 */
+    border-radius: 10px; /* 圆角 */
+}
+
+.input-textbox {
+    width: 100px;
+    margin-right: 10px;
+    padding: 5px;
+    font-family: 'Consolas', monospace;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: middle; /* 垂直居中 */
+  }

@@ -1,0 +1,85 @@
+.profile-container {
+    background-color: transparent;
+    color: #fff;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Consolas', monospace;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .profile-table {
+    width: 85vw;
+    margin: 0px 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    font-size: 0.8em; /* 字体大小调小 */
+  }
+  
+  .profile-table td {
+    padding: 1px;
+    border: 1px solid #444;
+    color: #fff;
+  }
+  
+  .profile-table tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .profile-table tr td {
+    flex: 1 1 25%;
+    box-sizing: border-box;
+  }
+  
+  .profile-table td[colspan="3"] {
+    flex: 1 1 50%;
+    padding: 5px 5px;
+  }
+  
+  h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1.2em; /* 标题字体稍小以适配整体风格 */
+  }
+
+  /* 扫码按钮样式 */
+.invite-button {
+    background-color: #c37430; /* 恢复原始的按钮颜色 */
+    color: white;
+    width: 85vw;
+    padding: 10px 20px;
+    margin-top: 5vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .email-input, .invite-input {
+    margin-top: 5vw;
+    width: 85vw;
+    padding: 8px 15px;
+    margin: 5px 0;
+    font-size: 0.8em;
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-sizing: border-box;
+  }
+
+  .ww-image {
+    width: 85vw;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  

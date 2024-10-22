@@ -1,0 +1,8 @@
+{
+    "name": "My DApp",
+    "url": "https://1c45-38-150-99-30.ngrok-free.app",
+    "iconUrl": "https://1c45-38-150-99-30.ngrok-free.app/assets/icon.png",
+    "bridgeUrl": "https://ton.org/bridge",
+    "permissions": ["tonClient", "tonAccount"]
+  }
+  

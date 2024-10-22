@@ -1,0 +1,105 @@
+/* QRCode 弹窗背景样式 */
+.qrcode-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 60vh; /* 占用 eSIM 页面的 60% 高度 */
+  background-color: #171717;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column; /* 让内容在垂直方向排列 */
+  justify-content: flex-start; /* 从顶部开始排列内容 */
+  align-items: center;
+  z-index: 1000; /* 确保弹窗覆盖在最上层 */
+  animation: slideUp 0.2s ease-out; /* 弹窗滑出效果 */
+  margin-top: 40vh; /* 增加顶部空隙 */
+}
+/* 动画效果 */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* 扫描窗口居中 */
+.scanner-container {
+  width: 100%;
+  height: calc(100% - 60px); /* 减去按钮的高度，保持扫描窗口布局合适 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: bottom;
+  position: relative;
+  margin-top: 0vh; /* 增加顶部空隙 */
+}
+
+/* 扫描区域边框添加动感效果 */
+.scanner {
+  margin: 10px auto;
+  width: 250px;
+  height: 250px;
+  border: 3px solid #515151;
+  position: relative;
+  overflow: hidden; /* 确保图片不超出边框 */
+  display: flex; /* 使用 flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  animation: borderGlow 2s infinite alternate; /* 添加动感边缘效果 */
+}
+
+/* 链接按钮的样式 */
+.link-buttons {
+  width: 90%;
+  position: absolute;
+  bottom: 10px; /* 按钮放置在弹窗底部 */
+  display: flex;
+  justify-content: space-between; /* 左右两边对齐 */
+  padding: 0 20px;
+}
+
+.link-button {
+  font-size: 16px;
+  color: #f6f8fa;
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: 'Consolas', monospace;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+/* 上传的二维码图片和最后一帧样式 */
+.uploaded-image {
+  max-width: 100%; /* 限制图片的最大宽度为容器宽度 */
+  max-height: 100%; /* 限制图片的最大高度为容器高度 */
+  object-fit: contain; /* 确保图片缩放时保持比例，不会超出容器 */
+  display: block; /* 确保图片作为块级元素，避免内联布局问题 */
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes borderGlow {
+  from {
+    border-color: #515151;
+  }
+  to {
+    border-color: #ff9800;
+  }
+}

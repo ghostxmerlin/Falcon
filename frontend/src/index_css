@@ -1,0 +1,59 @@
+.esim-container {
+    width: 100vw; /* 使用视口宽度 */
+    height: 100vh; /* 占满整个视口高度 */
+    padding: 10px;
+    background-color: #2E2E2E; /* 深灰背景 */
+    overflow-y: auto; /* 允许上下滚动 */
+  }
+  
+  .title {
+    text-align: center; /* 标题居中 */
+    color: white; /* 白色文字 */
+  }
+  
+  .esim-table-container {
+    margin: 20px auto; /* 表格间隔和居中对齐 */
+    width: 90%; /* 表格宽度为页面的90% */
+  }
+  
+  .esim-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1E3A8A; /* 更蓝的底色 */
+  }
+  
+  .esim-table td {
+    color: white; /* 白色文字 */
+    padding: 8px;
+  }
+  
+  .image-cell {
+    position: relative; /* 为了覆盖表格 */
+    text-align: right; /* 图片右对齐 */
+  }
+  
+  .esim-image {
+    width: 101px; /* 图片宽度 */
+    height: 64px; /* 图片高度 */
+    position: absolute; /* 绝对定位 */
+    top: 0; /* 顶部对齐 */
+    right: 0; /* 右对齐 */
+  }
+  
+  .right-align {
+    text-align: right; /* 右列右对齐 */
+  }
+  
+  /* 隐藏竖线 */
+  .esim-table td:not(:first-child) {
+    border-left: none; /* 隐藏竖线 */
+  }
+  
+  .buy-button {
+    background-color: transparent; /* 透明背景 */
+    border: 1px solid white; /* 白色细线 */
+    color: white; /* 白色文字 */
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
