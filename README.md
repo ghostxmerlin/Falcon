@@ -96,7 +96,7 @@ Start backend by
 cd src
 node http.js
 ```
-mini-app will access the web interface at [http://localhost:5174](http://localhost:3000). 
+mini-app will access the web interface at [http://localhost:3000](http://localhost:3000). 
 
 
 
@@ -108,7 +108,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
-If you have any questions or feedback, feel free to reach out:
-
-tg: merlinghost 😊
+If you have any questions or feedback, feel free to reach out 😊
 

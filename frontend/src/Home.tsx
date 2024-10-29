@@ -85,7 +85,7 @@ const Home = () => {
 
     // Text content
     const content = document.createElement('p');
-    content.textContent = 'Russia, Iran, Turkey, Egypt, and other such countries have implemented varying degrees of communication obstruction and surveillance on their citizens. Their growing success threatens world security. Allowing the good people living in these countries to freely access the internet is undoubtedly an act of resistance and suppression against this Sith-like oppressive rule. Our physical eSIM cards enable users to freely download card data from any carrier worldwide, allowing them to connect to the internet from free locations, and once these cards are in the hands of users, they can no longer be revoked. This is the cornerstone of free communication.Therefore, we call upon all those who believe in freedom and love peace to support or join our project, contributing a bit of strength to our galaxy. Resistance is not easy; we urge all rebels to use gray market channels to distribute these cards while avoiding regulatory oversight as much as possible to ensure your own safety. Only in this way can the seeds of freedom thrive on dark lands.';
+    content.textContent = 'Telecom operators, driven by their commercial interests or national regulations, have imposed many restrictions on eSIM applications, preventing users from making choices based on their own preferences or best interests. The Falcon project aims to change this by providing a standard eSIM card issued based on GSMA standards, allowing users to freely use eSIM technology and make optimal choices';
     overlay.appendChild(content);
 
     // Join button
@@ -136,7 +136,7 @@ const Home = () => {
       )}
       {/* 广告栏 */}
       <div className="ad-bar">
-        <span className="ad-text">The Rebellion aimed to spread physical esim card all over the world as the seed of freedom. A New Hope
+        <span className="ad-text">The Rebellion aimed to spread physical esim card all over the world as the seed of free use of data plans. A New Hope
         </span>
       </div>
 
